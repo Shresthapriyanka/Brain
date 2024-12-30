@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0,  0.5);
+}
+.logo img{
+    font-size: 1.5rem;
+    color: #c9c9c9;
+}
+.nav-links{
+    display: flex;
+    /* width:100%;
+    justify-content:space-between; */
+    gap: 30px;
+}
+.nav-links a{
+    text-decoration:none;
+    color: #c9c9c9;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+color: white;
+}
+.cta-buttons button{
+    padding: 8px 15px;
+    border: 1px solid #888;
+    background: transparent;
+    color: #888;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cta-buttons button:hover{
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border-color: transparent;
+}
+.write{
+    text-align: center;
+    padding-top: 100px;
+}
+.write h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.write p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+.cta-main-button{
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cta-main-button:hover {
+     transform: scale(1.1);
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.eye{
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 50% 50%, #fff, #000);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 20px 10px #6a11cb;
+    transition: all 0.5s ease-in-out;
+
+}
+.eye:hover{
+    box-shadow: 0px 0px 30px 20px #2575fc;
+    transform: scale(1.1);
+}
+.pupil{
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 3s infinite;
+}
+
+
+    @keyframes blink{
+        0%, 90%{
+            width: 50px;
+            height: 50px;
+        }
+        95%, 100%{
+            width: 50px;
+            height:10px;
+        }
+    }
+        footer{
+            margin-top: 50px;
+            text-align: center;
+            color: #888;
+            font-size:0.9rem;
+        }
+        
+    
